@@ -63,7 +63,7 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 ```
 小程序管理后台【开发管理】，可以看到上传的开发版本
 ```
-![输入图片说明](https://static.oschina.net/uploads/img/201810/12170422_sTtS.png "在这里输入图片标题")
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12191326_PEow.png "在这里输入图片标题")
 ```
 开发版本可以设置为体验版本，具有体验权限的人可以扫码访问，进行测试验证，测试商城数据等没有问题即可提交审核，发布上线。
 备注：提交审核后，需等待微信官方审核，审核通过后才可发布上线
