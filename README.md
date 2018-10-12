@@ -1,37 +1,71 @@
 # weixin-app-cms
 
-#### 项目介绍
-小程序网站
+###一、捷微小程序CMS快速对接H5活动之家微商城
+####1. 小程序项目代码下载
+```
+源码下载地址：https://gitee.com/jeecg/weixin-app-cms
+```
+#### 2. 小程序项目配置
+##### （1）配置H5活动之家微网站id
+```
+登录H5活动之家（http://www.h5huodong.com）找到需要对接的微网站，没有微网站可以创建一个微网站，进入菜单【微网站】-【站点管理】创建自己的微网站。
+```
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12190203_aqGU.png "在这里输入图片标题")
 
-#### 软件架构
-软件架构说明
+##### （2）站点创建后获取站点id
 
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12190222_pW2z.png "在这里输入图片标题")
 
-#### 安装教程
+##### （2） 微网站站点id配置到小程序项目中/dist/utils/wxRequest.js文件中
 
-1. xxxx
-2. xxxx
-3. xxxx
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12190439_hDqn.png "在这里输入图片标题")
 
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+####3. 发布小程序
+```
+小程序发布，需要通过微信开发者工具上传项目，上传者需扫码微信开发者工具，
+该登录微信号必须是当前小程序的开发者。
+1、发布前准备
+  授权开发者权限
+   小程序后台管理员授权微信用户为开发者
+   【用户身份-成员管理】添加成员
+```
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12165423_DkBh.png "在这里输入图片标题")
+```
+   服务器域名配置：
+   小程序后台，进入【设置-开发设置】，服务器域名设置app.h5huodong.com
+    改配置授权H5活动之家提供服务支持。
+```
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12172743_EdRx.png "在这里输入图片标题")
+```
+2、下载微信开发者工具
+下载地址：
+https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
+下载后安装开发者工具
+```
+```
+3、开发者工具导入项目
+扫码登录，选择小程序项目开发者模式。
+```
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12165657_QxgO.png "在这里输入图片标题")
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12165708_4NEq.png "在这里输入图片标题")
+```
+选择小程序代码工程目录（即选择下载的解压的小程序代码dist目录），填写小程序appid,填写一个项目名称，点击确定。
+```
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12165903_gM2z.png "在这里输入图片标题")
+```
+进入开发页面后，点击编译，然后点击上传，上传小程序到服务器。
+上传是填写版本号，项目备注。
+版本号命名规则 例如：1.0.1
+项目备注，备注项目名称，发布更新的功能
+填写后点击上传，即可上传到服务器，可在小程序管理后台看到
+```
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12190802_B0hU.png "在这里输入图片标题")
+```
+小程序管理后台【开发管理】，可以看到上传的开发版本
+```
+![输入图片说明](https://static.oschina.net/uploads/img/201810/12170422_sTtS.png "在这里输入图片标题")
+```
+开发版本可以设置为体验版本，具有体验权限的人可以扫码访问，进行测试验证，测试商城数据等没有问题即可提交审核，发布上线。
+备注：提交审核后，需等待微信官方审核，审核通过后才可发布上线
+```
+小程序对接完毕！！！

@@ -1,0 +1,10 @@
+
+  <import src="../wxParse/wxParse.wxml"/>
+  <view class="art-header" style="display:display;overflow-x:hidden;">
+  <image class="art-img" src="{{imageHref}}"/>
+  <!--<view class="art-title">{{articles.title}}</view>-->
+  </view>
+  <view class="wxParse-p big_images" style="overflow-x:hidden;">
+  <!--<rich-text class="art-content" nodes="{{articles.content}}" ></rich-text>-->
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>

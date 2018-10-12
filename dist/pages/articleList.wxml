@@ -1,0 +1,16 @@
+
+  <view class="container">
+  <view class="news-item-container">
+  <block wx:for="{{atricles}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+  <view class="news-item" bindtap="toArticlesInfo" data-wpytoarticlesinfo-a="{{item.id}}">
+  <view class="news-item-left">
+    <image class="news-image" style="width:73px;height:73px;" src="{{domain + item.imageHref}}"/>
+    </view>
+    <view class="news-item-right">
+      <view class="news-item-title"><text>{{item.title}}</text></view>
+      <view class="news-item-content"><text>{{item.summary}}</text></view>
+    </view>
+  </view>
+  </block>
+  </view>
+  </view>

@@ -1,0 +1,32 @@
+
+  <swiper style="height:400rpx" indicator-dots="true" autoplay="true" interval="2000" duration="500" circular="true">
+  <block  wx:for="{{adImgs}}">
+  <swiper-item>
+  <image src="{{adUpload}}{{item.imageHref}}" style="width:100%;height:400rpx" bindtap="goToAdvert" data-wpygotoadvert-a="{{item.link}}"/>
+  </swiper-item>
+  </block>
+  </swiper>
+  
+  <view class="tab">
+  <block wx:for="{{$tab$menu}}" wx:for-index="$tab$index" wx:for-item="$tab$item" wx:key="$tab$index">
+  <block  wx:if="{{$tab$item.type=='coulmn'}}">
+  <view class="tab_item{{$tab$active == $tab$item.id ? ' active' : ''}}" bindtap="$tab$changePage" data-wpychangepage-a="{{$tab$item.id}}"><text class="title">{{$tab$item.name}}</text></view>
+  </block>
+  <block  wx:if="{{$tab$item.type=='link'}}">
+    <view class="tab_item{{$tab$active == $tab$item.id ? ' active' : ''}}" bindtap="$tab$goToMenu" data-wpygotomenu-a="{{$tab$item.href}}"><text class="title">{{$tab$item.name}}</text></view>
+   </block>
+  </block>
+  </view>
+  <view style="margin-top:8px;">
+  <block wx:for="{{$tab$array}}" wx:for-index="$tab$index" wx:for-item="$tab$item" wx:key="$tab$index">
+  <view class="news-item" bindtap="$tab$toArticlesContent" data-wpytoarticlescontent-a="{{$tab$item.id}}">
+  <view class="news-item-left">
+  <image class="news-image" style="width:73px;height:73px" mode="aspectFit" src="{{$tab$linkUpload}}{{$tab$item.imageHref}}"/>
+  </view>
+  <view class="news-item-right">
+    <view class="news-item-title"><text>{{$tab$item.title}}</text></view>
+    <view class="news-item-content"><text>{{$tab$item.summary}}</text></view>
+  </view>
+  </view>
+  </block>
+  </view>

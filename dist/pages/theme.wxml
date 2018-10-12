@@ -1,0 +1,12 @@
+
+  <view class="container">
+  <block wx:for="{{menu}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+  <view class="card" bindtap="toArticlesPage" data-wpytoarticlespage-a="{{item.id}}" data-wpytoarticlespage-b="{{item.name}}">
+  <image class="card-image" src="{{linkUpload}}{{item.imageHref}}"/>
+  <view class="card-content">
+  <view><text class="card-title">{{item.name}}</text></view>
+  <view><text class="card-desc">{{item.content}}</text></view>
+  </view>
+  </view>
+  </block>
+  </view>
