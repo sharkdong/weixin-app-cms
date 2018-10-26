@@ -22,7 +22,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 var API_SECRET_KEY = 'yun.jeecg.org';
 var TIMESTAMP = _util2.default.getCurrentTime();
-var MAIN_ID = 'ff****************************d6';
+var MAIN_ID = 'ff808081661e74bb01661f12de5e03d6';
 var SIGN = _md2.default.hex_md5((TIMESTAMP + API_SECRET_KEY).toLowerCase());
 
 var wxRequest = function () {
