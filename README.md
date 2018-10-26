@@ -28,15 +28,10 @@
 ### 部分功能截图
 
 ![输入图片说明](https://static.oschina.net/uploads/img/201810/26150653_PP14.png "在这里输入图片标题")
+![输入图片说明](https://static.oschina.net/uploads/img/201810/26150710_o2EP.png "在这里输入图片标题")
+![输入图片说明](https://static.oschina.net/uploads/img/201810/26150727_eJ8g.png "在这里输入图片标题")
+![输入图片说明](https://static.oschina.net/uploads/img/201810/26150744_eFWe.png "在这里输入图片标题")
+![输入图片说明](https://static.oschina.net/uploads/img/201810/26150804_H8Wy.png "在这里输入图片标题")
 
-<img src="https://static.oschina.net/uploads/img/201810/26150653_PP14.png"/>
- 	
-<img src="https://static.oschina.net/uploads/img/201810/26150710_o2EP.png"/> 
-
-<img src="https://static.oschina.net/uploads/img/201810/26150727_eJ8g.png"/> 	
-	
-<img src="https://static.oschina.net/uploads/img/201810/26150744_eFWe.png"/> 
-
-<img src="https://static.oschina.net/uploads/img/201810/26150804_H8Wy.png"/>
 
 
