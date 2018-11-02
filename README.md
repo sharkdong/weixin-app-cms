@@ -11,6 +11,9 @@
 
 ### 小程序CMS开发文档
 	http://wepydemo.mydoc.io/?t=325746
+	
+### 快速安装视频
+* [小程序微网站安装视频](http://www.h5huodong.com/h5/vdetail.html?id=ff80808166d4317b0166d43c3e87008f)
 
 
 ### 技术交流请加QQ群
